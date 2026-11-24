@@ -1,0 +1,29 @@
+{
+ "onnx_matches_pytorch_max_abs_logit_diff": 2.0384788513183594e-05,
+ "size_mb": {
+  "fp32": 44.71265,
+  "int8": 11.30158
+ },
+ "test_accuracy": {
+  "fp32": 0.779441117764471,
+  "int8": 0.7724550898203593
+ },
+ "int8_agrees_with_fp32": 0.9790419161676647,
+ "latency_ms_1_image_1_thread": {
+  "fp32_p50": 3.148552499624202,
+  "fp32_p99": 3.733090450123199,
+  "int8_p50": 0.9697085001789674,
+  "int8_p99": 1.312678189406142
+ },
+ "calibration_images": 300,
+ "melanoma_referral_on_test": {
+  "fp32": {
+   "sensitivity": 0.7533632286995515,
+   "specificity": 0.7950589556428973
+  },
+  "int8": {
+   "sensitivity": 0.7399103139013453,
+   "specificity": 0.8029197080291971
+  }
+ }
+}

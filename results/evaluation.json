@@ -1,0 +1,310 @@
+{
+ "run": "lesion_pretrained_s0",
+ "test_images": 2004,
+ "test_lesions": 1495,
+ "temperature": 1.1127114068677049,
+ "test": {
+  "accuracy": {
+   "value": 0.779441117764471,
+   "ci95": [
+    0.7559758339947222,
+    0.8017894712003
+   ]
+  },
+  "balanced_accuracy": {
+   "value": 0.5016937842889858,
+   "ci95": [
+    0.45689359995699114,
+    0.5444308114418582
+   ]
+  },
+  "macro_auc": {
+   "value": 0.9306326155036856,
+   "ci95": [
+    0.9195211902172297,
+    0.9412178272084454
+   ]
+  },
+  "melanoma_auc": {
+   "value": 0.8706324607277114,
+   "ci95": [
+    0.8401422924360208,
+    0.897221481158827
+   ]
+  }
+ },
+ "per_class_recall": {
+  "akiec": 0.24242424242424243,
+  "bcc": 0.5631067961165048,
+  "bkl": 0.6,
+  "df": 0.08695652173913043,
+  "mel": 0.3721973094170404,
+  "nv": 0.9328859060402684,
+  "vasc": 0.7142857142857143
+ },
+ "calibration": {
+  "before": {
+   "ece": 0.021370815674582874,
+   "nll": 0.6194766163825989
+  },
+  "after_temperature": {
+   "ece": 0.02415624900373394,
+   "nll": 0.6193329691886902
+  }
+ },
+ "melanoma_referral": {
+  "threshold": 0.15456968545913696,
+  "chosen_on": "validation, 90% sensitivity target",
+  "test_sensitivity": {
+   "value": 0.7533632286995515,
+   "ci95": [
+    0.6837150629400469,
+    0.8217873619822714
+   ]
+  },
+  "test_specificity": {
+   "value": 0.7950589556428973,
+   "ci95": [
+    0.7725963893940526,
+    0.8174649117808744
+   ]
+  },
+  "share_of_images_referred": 0.26596806387225547
+ },
+ "subgroups": {
+  "sex": {
+   "female": {
+    "n": 892,
+    "melanoma_n": 81,
+    "accuracy": 0.7948430493273543,
+    "balanced_accuracy": 0.5068917260946247,
+    "melanoma_sensitivity": 0.7283950617283951,
+    "accuracy_ci95": [
+     0.7643772572856701,
+     0.8231564395515707
+    ]
+   },
+   "male": {
+    "n": 1095,
+    "melanoma_n": 142,
+    "accuracy": 0.7643835616438356,
+    "balanced_accuracy": 0.49298382504791005,
+    "melanoma_sensitivity": 0.7676056338028169,
+    "accuracy_ci95": [
+     0.732117907775397,
+     0.7958812829729259
+    ]
+   }
+  },
+  "age_band": {
+   "40-59": {
+    "n": 899,
+    "melanoma_n": 70,
+    "accuracy": 0.8387096774193549,
+    "balanced_accuracy": 0.4924311352968181,
+    "melanoma_sensitivity": 0.8285714285714286,
+    "accuracy_ci95": [
+     0.8031552552990893,
+     0.8682282880349891
+    ]
+   },
+   "60+": {
+    "n": 710,
+    "melanoma_n": 140,
+    "accuracy": 0.6507042253521127,
+    "balanced_accuracy": 0.5305180029000848,
+    "melanoma_sensitivity": 0.7285714285714285,
+    "accuracy_ci95": [
+     0.6115882352941177,
+     0.6898363831215625
+    ]
+   },
+   "<40": {
+    "n": 374,
+    "melanoma_n": 13,
+    "accuracy": 0.8716577540106952,
+    "balanced_accuracy": 0.5252722940776038,
+    "melanoma_sensitivity": 0.6153846153846154,
+    "accuracy_ci95": [
+     0.8249961908983248,
+     0.9123138266883255
+    ]
+   }
+  },
+  "body_site": {
+   "abdomen": {
+    "n": 184,
+    "melanoma_n": 11,
+    "accuracy": 0.9021739130434783,
+    "balanced_accuracy": 0.541939021243657,
+    "melanoma_sensitivity": 0.6363636363636364,
+    "accuracy_ci95": [
+     0.8430753968253968,
+     0.9559286017849554
+    ]
+   },
+   "back": {
+    "n": 437,
+    "melanoma_n": 79,
+    "accuracy": 0.7437070938215103,
+    "balanced_accuracy": 0.41689478853369594,
+    "melanoma_sensitivity": 0.7468354430379747,
+    "accuracy_ci95": [
+     0.6933559384164223,
+     0.7942253553761136
+    ]
+   },
+   "face": {
+    "n": 141,
+    "melanoma_n": 18,
+    "accuracy": 0.5673758865248227,
+    "balanced_accuracy": 0.4993470893141946,
+    "melanoma_sensitivity": 0.6666666666666666,
+    "accuracy_ci95": [
+     0.47840838509316774,
+     0.6606301625366373
+    ]
+   },
+   "lower extremity": {
+    "n": 409,
+    "melanoma_n": 26,
+    "accuracy": 0.80440097799511,
+    "balanced_accuracy": 0.4769789392326338,
+    "melanoma_sensitivity": 0.8461538461538461,
+    "accuracy_ci95": [
+     0.7580215110146394,
+     0.8494225764476252
+    ]
+   },
+   "other": {
+    "n": 332,
+    "melanoma_n": 39,
+    "accuracy": 0.7319277108433735,
+    "balanced_accuracy": 0.4146062271062271,
+    "melanoma_sensitivity": 0.7435897435897436,
+    "accuracy_ci95": [
+     0.6721055300523113,
+     0.784078670869451
+    ]
+   },
+   "trunk": {
+    "n": 278,
+    "melanoma_n": 8,
+    "accuracy": 0.9064748201438849,
+    "balanced_accuracy": 0.753968253968254,
+    "melanoma_sensitivity": null,
+    "accuracy_ci95": [
+     0.8605188870249321,
+     0.9525750329705462
+    ]
+   },
+   "upper extremity": {
+    "n": 223,
+    "melanoma_n": 42,
+    "accuracy": 0.7488789237668162,
+    "balanced_accuracy": 0.44503738995598235,
+    "melanoma_sensitivity": 0.7857142857142857,
+    "accuracy_ci95": [
+     0.6756126126126126,
+     0.8204556640548096
+    ]
+   }
+  }
+ },
+ "leakage": {
+  "original": {
+   "accuracy": {
+    "mean": 0.7785536159600998,
+    "sd": 0.009735272466804576
+   },
+   "balanced_accuracy": {
+    "mean": 0.5357002176296962,
+    "sd": 0.026164899853119337
+   },
+   "macro_auc": {
+    "mean": 0.9355369760412054,
+    "sd": 0.004032871306427089
+   },
+   "melanoma_auc": {
+    "mean": 0.8875929197304385,
+    "sd": 0.004542397861382195
+   },
+   "seeds": 3
+  },
+  "lesion": {
+   "accuracy": {
+    "mean": 0.7796074517631403,
+    "sd": 0.004742707062336399
+   },
+   "balanced_accuracy": {
+    "mean": 0.5205318025715645,
+    "sd": 0.021584848628135422
+   },
+   "macro_auc": {
+    "mean": 0.9325018985899187,
+    "sd": 0.0016787611469942139
+   },
+   "melanoma_auc": {
+    "mean": 0.8786828917430207,
+    "sd": 0.006352351579725609
+   },
+   "seeds": 3
+  },
+  "official_test_leaked_vs_clean": {
+   "n_leaked": 693,
+   "n_clean": 1312,
+   "per_seed": [
+    {
+     "leaked_accuracy": 0.6305916305916306,
+     "clean_accuracy": 0.8422256097560976,
+     "leaked_balanced_accuracy": 0.45686961492973005,
+     "clean_balanced_accuracy": 0.5376963046525143
+    },
+    {
+     "leaked_accuracy": 0.6594516594516594,
+     "clean_accuracy": 0.8567073170731707,
+     "leaked_balanced_accuracy": 0.5113337524284075,
+     "clean_balanced_accuracy": 0.5869611882892573
+    },
+    {
+     "leaked_accuracy": 0.645021645021645,
+     "clean_accuracy": 0.8483231707317073,
+     "leaked_balanced_accuracy": 0.5284587308965705,
+     "clean_balanced_accuracy": 0.5682771523762191
+    }
+   ],
+   "per_class_mean_recall": {
+    "mel": {
+     "n_leaked": 139,
+     "n_clean": 84,
+     "recall_leaked": 0.3477218225419665,
+     "recall_clean": 0.44047619047619047
+    },
+    "nv": {
+     "n_leaked": 346,
+     "n_clean": 995,
+     "recall_leaked": 0.8516377649325627,
+     "recall_clean": 0.9574539363484087
+    },
+    "bkl": {
+     "n_leaked": 103,
+     "n_clean": 117,
+     "recall_leaked": 0.5080906148867314,
+     "recall_clean": 0.5042735042735043
+    },
+    "bcc": {
+     "n_leaked": 53,
+     "n_clean": 50,
+     "recall_leaked": 0.5849056603773585,
+     "recall_clean": 0.6733333333333333
+    }
+   }
+  }
+ },
+ "from_scratch_same_split": {
+  "accuracy": 0.7674650698602794,
+  "balanced_accuracy": 0.47881233085819513,
+  "macro_auc": 0.9307781278467843,
+  "melanoma_auc": 0.8949675574008658
+ }
+}

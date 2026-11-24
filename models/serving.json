@@ -1,0 +1,26 @@
+{
+ "version": "1.0.0",
+ "model_file": "clearscan_int8.onnx",
+ "trained_run": "lesion_pretrained_s0",
+ "classes": [
+  "akiec",
+  "bcc",
+  "bkl",
+  "df",
+  "mel",
+  "nv",
+  "vasc"
+ ],
+ "class_names": {
+  "akiec": "actinic keratosis / intraepithelial carcinoma",
+  "bcc": "basal cell carcinoma",
+  "bkl": "benign keratosis",
+  "df": "dermatofibroma",
+  "mel": "melanoma",
+  "nv": "melanocytic nevus",
+  "vasc": "vascular lesion"
+ },
+ "temperature": 1.1127,
+ "melanoma_threshold": 0.1546,
+ "low_confidence_below": 0.5
+}

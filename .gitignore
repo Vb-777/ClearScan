@@ -1,0 +1,14 @@
+data/
+results/runs/
+mlruns/
+models/clearscan_fp32.onnx
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+*.pyc
+.idea/
+.vscode/
+.DS_Store
+.env
+.env.*

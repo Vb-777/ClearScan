@@ -1,0 +1,29 @@
+{
+ "by_layer": {
+  "layer2": {
+   "images": 400,
+   "blanked_share": 0.25,
+   "mean_prob_drop_gradcam_pixels": 0.1600213646888733,
+   "mean_prob_drop_random_pixels": 0.14248135685920715,
+   "mean_prob_drop_lowest_gradcam_pixels": 0.06956424564123154,
+   "layer": "layer2"
+  },
+  "layer3": {
+   "images": 400,
+   "blanked_share": 0.25,
+   "mean_prob_drop_gradcam_pixels": 0.12321268767118454,
+   "mean_prob_drop_random_pixels": 0.14248135685920715,
+   "mean_prob_drop_lowest_gradcam_pixels": 0.026695169508457184,
+   "layer": "layer3"
+  },
+  "layer4": {
+   "images": 400,
+   "blanked_share": 0.25,
+   "mean_prob_drop_gradcam_pixels": 4.026032911497168e-05,
+   "mean_prob_drop_random_pixels": 0.14248135685920715,
+   "mean_prob_drop_lowest_gradcam_pixels": 0.04176470637321472,
+   "layer": "layer4"
+  }
+ },
+ "used_for_figure": "layer2"
+}
